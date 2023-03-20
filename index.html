@@ -304,12 +304,50 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+
             <button type="button" data-modal-close class="modal-close">
                 <svg class="close-icon" widht="32" height="32">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
-            <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+
+            <form class="form">
+                <h3 class="modal-heading">
+                    Leave your contacts and we will call you back
+                </h3>
+
+                <div class="form-field-modal name">
+                    <label for="name">Name</label>
+                    <svg class="icon" width="18" height="24">
+                        <use href="./images/symbol-defs.svg#icon-person"></use>
+                    </svg>
+                    <input type="text" name="user-name" id="name" />
+                </div>
+
+                <div class="form-field-modal phone">
+                    <label for="tel">Phone</label>
+                    <svg class="icon" width="18" height="24">
+                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                    <input type="tel" name="tel" id="tel" />
+                </div>
+
+                <div class="form-field-modal">
+                    <label for="email">Email</label>
+                    <svg class="icon" width="18" height="24">
+                        <use href="./images/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                    <input type="email" name="mail" id="email" />
+                </div>
+
+                <div class="form-field-modal">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" placeholder="Text input"></textarea>
+                </div>
+
+                <button class="btn-modal" type="submit">Send</button>
+
+            </form>
         </div>
 
     </div>
