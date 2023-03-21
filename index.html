@@ -267,7 +267,7 @@
         <div class="container">
             <ul class="footer-description">
 
-                <li><a href="./index.html" class="main-footer-logo"><span class="logo-acsent">Web</span><span
+                <li class="footer-descript"><a href="./index.html" class="main-footer-logo"><span class="logo-acsent">Web</span><span
                             class="logo-footer">Studio</span></a>
 
                     <p class="footer-subtitle">Increase the flow of customers and sales for your business with digital
@@ -275,7 +275,7 @@
                         &
                         growth solutions.</p>
                 </li>
-                <li>
+                <li class="footer-social">
                     <p class="footer-social-subtitle">Social media</p>
                     <ul class="footer-social-list list">
                         <li class="footer-social-item"><a href="" class="footer-social-link link">
@@ -294,9 +294,24 @@
                                 <svg class="footer-social-icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                 </svg> </a></li>
+
                     </ul>
                 </li>
+
+                <form class="footer-form" name="signup_form" autocomplete="on" novalidate>
+                    <div class="footer-form-field">
+                        <label class="footer-label" for="footer-email">Subscribe</label>
+                        <input class="footer-input"  type="email" name="email" id="footer-email" placeholder="E-mail" />
+                    </div>
+                    <button class="btn-subscribe" type="submit">Subscribe
+                        <svg class="icon-subscribe" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-subscribe"></use>
+                        </svg>
+                    </button>
+                </form>
+
             </ul>
+
         </div>
     </footer>
 
@@ -317,33 +332,45 @@
                 </h3>
 
                 <div class="form-field-modal name">
-                    <label for="name">Name</label>
+                    <label class="label-form-modal" for="name">Name</label>
                     <svg class="icon" width="18" height="24">
                         <use href="./images/symbol-defs.svg#icon-person"></use>
                     </svg>
-                    <input type="text" name="user-name" id="name" />
+                    <input class="form-input" type="text" name="user-name" id="name" />
                 </div>
 
                 <div class="form-field-modal phone">
-                    <label for="tel">Phone</label>
+                    <label class="label-form-modal" for="tel">Phone</label>
                     <svg class="icon" width="18" height="24">
                         <use href="./images/symbol-defs.svg#icon-phone"></use>
                     </svg>
-                    <input type="tel" name="tel" id="tel" />
+                    <input class="form-input" type="tel" name="tel" id="tel" />
                 </div>
 
                 <div class="form-field-modal">
-                    <label for="email">Email</label>
+                    <label class="label-form-modal" for="email">Email</label>
                     <svg class="icon" width="18" height="24">
                         <use href="./images/symbol-defs.svg#icon-email"></use>
                     </svg>
-                    <input type="email" name="mail" id="email" />
+                    <input class="form-input" type="email" name="mail" id="email" />
                 </div>
 
                 <div class="form-field-modal">
-                    <label for="comment">Comment</label>
-                    <textarea name="comment" id="comment" placeholder="Text input"></textarea>
+                    <label class="label-form-modal" for="comment">Comment</label>
+                    <textarea class="form-textarea" name="comment" id="comment" placeholder="Text input"></textarea>
                 </div>
+
+                <!-- check-box -->
+                <input type="checkbox" class="form-checkbox visually-hidden" id="policy" name="check" />
+                <label for="policy" class="form-label-checkbox">
+                    <span>
+                        <svg class="form-checkbox-icon" width="10" height="8">
+                            <use href="./images/symbol-defs.svg#icon-check"></use>
+                        </svg></span>
+                    I accept the terms and conditions of the Privacy Policy
+
+                </label>
+
 
                 <button class="btn-modal" type="submit">Send</button>
 
