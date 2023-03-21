@@ -210,7 +210,7 @@
         <div class="container">
             <ul class="footer-description">
 
-                <li><a href="./index.html" class="main-footer-logo"><span class="logo-acsent">Web</span><span
+                <li class="footer-descript"><a href="./index.html" class="main-footer-logo"><span class="logo-acsent">Web</span><span
                             class="logo-footer">Studio</span></a>
 
                     <p class="footer-subtitle">Increase the flow of customers and sales for your business with digital
@@ -218,7 +218,7 @@
                         &
                         growth solutions.</p>
                 </li>
-                <li>
+                <li class="footer-social">
                     <p class="footer-social-subtitle">Social media</p>
                     <ul class="footer-social-list list">
                         <li class="footer-social-item"><a href="" class="footer-social-link link">
@@ -237,9 +237,24 @@
                                 <svg class="footer-social-icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                 </svg> </a></li>
+
                     </ul>
                 </li>
+
+                <form class="footer-form" name="signup_form" autocomplete="on" novalidate>
+                    <div class="footer-form-field">
+                        <label class="footer-label" for="footer-email">Subscribe</label>
+                        <input class="footer-input"  type="email" name="email" id="footer-email" placeholder="E-mail" />
+                    </div>
+                    <button class="btn-subscribe" type="submit">Subscribe
+                        <svg class="icon-subscribe" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-subscribe"></use>
+                        </svg>
+                    </button>
+                </form>
+
             </ul>
+
         </div>
     </footer>
     <!-- /Footer section -->
