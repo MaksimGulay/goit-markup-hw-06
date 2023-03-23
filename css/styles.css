@@ -609,6 +609,7 @@ img {
     padding: 0;
     transition: outline-color;
     padding: 16px;
+    color: #FFFFFF;
 }
 
 .footer-input:focus {
@@ -1017,6 +1018,17 @@ img {
     align-items: center;
     margin-top: 16px;
     margin-bottom: 24px;
+}
+
+.privacy-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3px;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: var(--main-butons-color);
+    text-decoration-line: underline;
+    padding-left: 5.5px;
 }
 
 /* .form-label-checkbox::before {
