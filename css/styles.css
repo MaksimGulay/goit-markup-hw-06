@@ -903,6 +903,9 @@ img {
     position: relative;
     flex-direction: column;
     margin-bottom: 8px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-heading {
@@ -960,6 +963,18 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.icon {
+    position: absolute;
+    fill: var(--main-title-color);
+    bottom: 8px;
+    left: 16px;
+}
+
+.form-field-modal:focus-within .icon {
+    fill: var(--main-buttons-focuse-color);
+}
+
 .form-input:focus {
     outline-color: var(--main-butons-color);
 }
@@ -999,12 +1014,6 @@ img {
     outline: none;
 }
 
-.icon {
-    position: absolute;
-    fill: var(--main-title-color);
-    bottom: 8px;
-    left: 16px;
-}
 
 /* checkbox */
 
